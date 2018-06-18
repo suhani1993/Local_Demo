@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="us">
+	<head>
+		<meta charset="utf-8">
+		<title>UTILS</title>
+		<link href="../lib/jquery-ui-1.11.1.custom/jquery-ui.min.css" rel="stylesheet">
+
+		<link href="../lib/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../lib/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="../lib/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+		<script src="../lib/js/jquery.js"></script>
+		<script src="../lib/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+		<script src="../lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+		<script src="../lib/js/moment.js"></script>
+		<script src="../lib/js/bootstrap-datetimepicker.js"></script>
+
+		<script src="../utils/DateUtils.js"></script>
+		<script src="../utils/NotifUtils.js"></script>
+		<script src="../utils/DialogUtils.js"></script>
+
+	</head>
+	<body>
+
+		<div class="page-header">
+			<h1>Date Picker <small> <a href="http://eonasdan.github.io/bootstrap-datetimepicker/#events">Go to example site</a></small></h1>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class='col-sm-4'>
+					<div class="form-group">
+						<div id='datetimepicker1'></div>
+						<div class='input-group date' id='datetimepicker2'></div>
+						<div class='input-group date' id='datetimepicker3'></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-header">
+			<h1>Alert Message<small> <a href="http://getbootstrap.com/javascript/#alerts">Go to example site</a></small></h1>
+		</div>
+
+		
+		<div class="page-header">
+			<h1>Modal (Dialogs)<small> <a href="http://getbootstrap.com/javascript/#modals">Go to example site</a></small></h1>
+		</div>
+
+
+			<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+			
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      ...
+			    </div>
+			  </div>
+			</div>
+			
+			 
+		<div id="modal-body">
+			<button class="btn btn-primary">Small modal</button>
+			<span> This is the body of </span>
+		</div>
+
+		<script type="text/javascript">
+			// initialization
+			console.info("function()");
+			jQuery.fn.exists = function() {
+				return this.length > 0;
+			}
+			$(function() {
+
+				var smallDialog = new Dialog();
+				smallDialog.create("Title", "#modal-body");
+				smallDialog.show();
+				
+				
+				// creates date and time picker
+				DateUtils.createDateTimePicker("#datetimepicker1");
+
+				DateUtils.createDatePicker("#datetimepicker2", "YYYY/MM/DD");
+
+				DateUtils.createTimePicker("#datetimepicker3");
+
+				console.info("dateUtils.doubleToDate(0) : " + DateUtils.doubleToDate(0));
+				console.info("dateUtils.doubleToDate('0') : " + DateUtils.doubleToDate("0"));
+				console.info("dateUtils.defaultFormate(0) : " + DateUtils.defaultFormate(0));
+				console.info("dateUtils.defaultFormate('0') : " + DateUtils.defaultFormate("0"));
+				console.info("dateUtils.defaultFormate(new Date()) : " + DateUtils.defaultFormate(new Date()));
+				console.info("dateUtils.defaultTimeFormate(0) : " + DateUtils.defaultTimeFormate(0));
+				console.info("dateUtils.defaultTimeFormate(new Date()) : " + DateUtils.defaultTimeFormate(new Date()));
+
+				/*$('#datetimepicker1').datetimepicker();*/
+
+				NotifUtils.add('ERROR NOTIFICATION', NotifUtils.ERROR);
+				// NotifUtils.hide('#alert1');
+
+				NotifUtils.add('INFORMATION NOTIFICATION', NotifUtils.INFO);
+				// NotifUtils.hide('#alert2');
+
+				NotifUtils.add('WARNING NOTIFICATION', NotifUtils.WARN);
+				// NotifUtils.hide('#alert3');
+
+				
+//				$('#Modal').modal('show');
+			});
+
+		</script>
+	</body>
+</html>

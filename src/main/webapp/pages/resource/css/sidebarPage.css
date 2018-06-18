@@ -1,0 +1,117 @@
+.sidebarPage-container {
+	position: relative;
+	border: 1px solid #adadad;
+	min-height: 400px;
+}
+
+.sidebarPage-container .sidebarPage-sidebar, .sidebarPage-container .sidebarPage-body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.sidebarPage-container .sidebarPage-sidebar {
+	width: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	min-height: 100%;
+	background: #fbfbfb;
+	border-right: 1px solid #ebebeb
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li {
+	margin: 0;
+	padding: 0
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li a {
+	color: #777;
+	display: block;
+	padding: 10px 10px 10px 25px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	font-size: 13px
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li a:hover {
+	text-decoration: none;
+	color: #444
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li a i {
+	margin-right: 10px;
+	font-size: 13px
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li a .badge {
+	font-size: 13px
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li a .badge-tag {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 4px
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li:hover a {
+	background: #fff
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li.active a {
+	background: #f3f3f3;
+/* 	font-weight: bold */
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li.divider {
+	padding: 0;
+	height: 1px;
+	margin: 9px 0 3px;
+	background: #e5e5e5
+}
+
+.sidebarPage-container .sidebarPage-sidebar .sidebar-menu>li.menu-title {
+	margin-top: 25px;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-left: 25px;
+	font-weight: 700
+}
+
+.sidebarPage-container .sidebarPage-header {
+	position: relative;
+	height: 38px;
+	margin-left: 200px;
+	padding: 0;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	padding: 10px;
+}
+
+
+.sidebarPage-container .sidebarPage-body {
+	position: relative;
+	margin-left: 150px;
+	padding: 0;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.sidebarPage-container.right-sidebar .sidebarPage-sidebar {
+	border-left: 1px solid #ebebeb;
+	border-right: 0
+}
+
+.sidebarPage-container.right-sidebar .sidebarPage-body {
+	float: left
+}

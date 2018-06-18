@@ -1,0 +1,130 @@
+[class^="icon-custom-"] {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 20px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-xs > [class^="icon-custom-"] {
+    background-size: 12px 14px !important;
+}
+
+.icon-custom-active {
+    background-image: url("../img/hrms/common/icon-active.png");
+}
+
+.icon-custom-hrms-common-view-approval-detail{
+  background-image: url('../img/hrms/common/icon-view-approval-detail.png');
+}
+
+.icon-custom-hrms-common-view-request{
+   background-image : url('../img/hrms/common/icon-view-request.png');
+}
+
+/* .glyphicon-hrms-common-close{ */
+/*    content: url('../img/hrms/common/icon-close.png'); */
+/* } */
+
+.icon-custom-hrms-common-active-role{
+   background-image : url('../img/hrms/common/icon-active-role.png');
+}
+
+.icon-custom-hrms-common-inactive-role{
+   background-image : url('../img/hrms/common/icon-InActive-Role.png');
+}
+
+.icon-custom-hrms-common-change-password{
+   background-image : url('../img/hrms/common/icon-change-password.png');
+}
+
+.icon-custom-hrms-common-activate{
+   background-image : url('../img/hrms/common/icon-active.png');
+}
+
+/* TODO : No Action Button  */
+.icon-custom-hrms-common-deactivate{
+   background-image : url('../img/hrms/common/icon-DeActive.png');
+}
+
+.icon-custom-hrms-common-test-email-address{
+   background-image : url('../img/hrms/common/icon-text-email-address.png');
+}
+
+.icon-custom-hrms-common-change-status{
+   background-image : url('../img/hrms/common/icon-change-status.png');
+}
+
+.icon-custom-hrms-common-change-status{
+   background-image : url('../img/hrms/common/icon-change-status.png');
+}
+
+/* TODO : No Action Button  */
+.icon-custom-hrms-common-view-profile-detail{
+   background-image : url('../img/hrms/common/icon-view-profile-detail.png');
+}
+
+/* Hrms : Employee Action Icon CSS */
+
+.icon-custom-hrms-emp-view{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-detail.png');
+}
+
+.icon-custom-hrms-emp-edit{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-edit.png');
+}
+
+/* Action Button Remove */
+.icon-custom-hrms-emp-remove{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-delete.png');
+}
+
+.icon-custom-hrms-emp-salary{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-salary.png');
+}
+
+.icon-custom-hrms-emp-overtime{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-overtime.png');
+}
+
+.icon-custom-hrms-emp-map{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-map.png');
+}
+
+.icon-custom-hrms-emp-overtime-pay{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-overtime-pay.png');
+}
+
+.icon-custom-hrms-emp-present-chart{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-present-chart.png');
+}
+
+.icon-custom-hrms-emp-role{
+  background-image: url('../img/hrms/employee/employee-action/icon-employee-role.png');
+}
+
+/* ----------   Empoloyee Duty Schedule -----------  */
+
+.icon-custom-hrms-emp-duty-schedule-view-shift-detail{
+  background-image: url('../img/hrms/employee/duty-schedule/icon-view-shift-detail.png');
+}
+
+.icon-custom-hrms-emp-duty-schedule-shift-change-request{
+	background-image: url('../img/hrms/employee/duty-schedule/icon-shift-chnage-request.png');
+}
+
+/* ----------   Empoloyee Tour Request -----------  */
+
+.icon-custom-hrms-emp-tour-request-view-tour-request{
+  background-image: url('../img/hrms/employee/tour-request/icon-view-tour-request.png');
+}
+
+/* ----------   Empoloyee leave Request -----------  */
+
+.icon-custom-hrms-emp-view-leave-request{
+  background-image: url('../img/hrms/employee/leave-request/icon-view-leave-request.png');
+}
+
+
+

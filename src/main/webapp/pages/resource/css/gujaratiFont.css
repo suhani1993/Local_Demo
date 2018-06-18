@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+  font-family: 'GujaratiFont';
+  src: url('../css/fonts/Vakil01.eot'); /* IE9 Compat Modes */
+  src: url('../css/fonts/Vakil01.eot?#iefix') format('embedded-opentype'),  /* IE6-IE8 */
+  		url('../css/fonts/Vakil01.woff') format('woff'), /* Modern Browsers */
+  		url('../css/fonts/Vakil01.ttf') format('truetype'), /* Safari, Android, iOS */
+  		url('../css/fonts/Vakil01.svg#svgFontName') format('svg'); /* Legacy iOS */
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gujarati {
+	font-family: GujaratiFont !important;
+}
